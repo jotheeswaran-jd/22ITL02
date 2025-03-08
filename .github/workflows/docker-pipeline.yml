@@ -1,0 +1,17 @@
+name: docker-pipeline-jotheeswaran
+on: push
+jobs:
+  docker-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print your Register Number
+        run: echo "Hello world - 22ITL02"
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Docker Build
+        run: docker build -t jotheeswaranjd7/ml-model-22itl02 .
+
+      - name: Docker Images
+        run: docker images
