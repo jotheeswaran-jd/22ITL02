@@ -12,7 +12,7 @@ jobs:
 
       - name: Docker Build
         run: docker build -t jotheeswaranjd7/ml-model-22itl02 .
-
+        
       - name: Docker Images
         run: docker images
 
